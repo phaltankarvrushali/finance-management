@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="430.0">
+         <children>
+            <Label layoutX="45.0" layoutY="46.0" prefHeight="20.0" prefWidth="111.0" text="Username" textAlignment="RIGHT">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font></Label>
+            <Label layoutX="46.0" layoutY="110.0" text="Age" textAlignment="RIGHT">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font></Label>
+            <Label layoutX="47.0" layoutY="180.0" text="Gender" textAlignment="RIGHT">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font></Label>
+            <Label layoutX="46.0" layoutY="253.0" prefHeight="17.0" prefWidth="57.0" text="Email Id" textAlignment="RIGHT">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font></Label>
+            <Label layoutX="46.0" layoutY="320.0" text="Password" textAlignment="RIGHT">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font></Label>
+            <Label layoutX="45.0" layoutY="396.0" text="Location" textAlignment="RIGHT">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font></Label>
+            <Label layoutX="45.0" layoutY="462.0" text="Phone Number" textAlignment="RIGHT">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font></Label>
+            <TextField fx:id="txtUsername" layoutX="46.0" layoutY="72.0" prefHeight="26.0" prefWidth="319.0" />
+            <TextField fx:id="txtAge" layoutX="46.0" layoutY="136.0" prefHeight="26.0" prefWidth="319.0" />
+            <RadioButton fx:id="radiobtnmale" layoutX="49.0" layoutY="210.0" mnemonicParsing="false" text="Male">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="radiobtnfemale" layoutX="175.0" layoutY="210.0" mnemonicParsing="false" text="Female">
+               <font>
+                  <Font name="Cambria" size="16.0" />
+               </font></RadioButton>
+            <TextField fx:id="txtEmail" layoutX="46.0" layoutY="281.0" prefHeight="26.0" prefWidth="319.0" />
+            <PasswordField fx:id="txtPassword" layoutX="46.0" layoutY="347.0" prefHeight="26.0" prefWidth="319.0" />
+            <TextField fx:id="txtLocation" layoutX="45.0" layoutY="422.0" prefHeight="26.0" prefWidth="319.0" />
+            <TextField fx:id="txtPhoneNumber" layoutX="45.0" layoutY="490.0" prefHeight="26.0" prefWidth="319.0" />
+            <Label fx:id="valUserName" layoutX="119.0" layoutY="48.0" prefHeight="17.0" prefWidth="134.0" text="*" textFill="RED" />
+            <Label fx:id="valAge" layoutX="80.0" layoutY="112.0" prefHeight="17.0" prefWidth="337.0" text="*" textFill="RED" />
+            <Label fx:id="valGender" layoutX="106.0" layoutY="182.0" prefHeight="17.0" prefWidth="335.0" text="*" textFill="RED" />
+            <Label fx:id="valEmail" layoutX="106.0" layoutY="253.0" prefHeight="18.0" prefWidth="290.0" text="*" textFill="RED" />
+            <Label fx:id="valPassword" layoutX="119.0" layoutY="321.0" prefHeight="18.0" prefWidth="381.0" text="*" textFill="RED" />
+            <Label fx:id="valLocation" layoutX="111.0" layoutY="397.0" prefHeight="18.0" prefWidth="264.0" text="*" textFill="RED" />
+            <Label fx:id="valPhoneNumber" layoutX="158.0" layoutY="463.0" prefHeight="18.0" prefWidth="231.0" text="*" textFill="RED" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="600.0" prefWidth="397.0" style="-fx-background-color: #4169E1;">
+         <children>
+            <Button fx:id="btnSignIn" blendMode="SCREEN" layoutX="188.0" layoutY="540.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="35.0" prefWidth="88.0" style="-fx-background-color: #FFFFFF;" text="Back" textFill="#0547a4">
+               <font>
+                  <Font name="Poppins Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSignup" blendMode="SCREEN" layoutX="36.0" layoutY="539.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="88.0" style="-fx-background-color: #FFFFFF;" text="Sign Up" textFill="#0547a4">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+   </children>
+</HBox>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="603.0" prefWidth="172.0" style="-fx-background-color: #3490dc;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="600.0" prefWidth="327.0" style="-fx-background-color: #4169E1;">
+               <children>
+                  <Button fx:id="btnTansaction" layoutX="54.0" layoutY="359.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: db3069;" text="Transactions" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnLogOut" blendMode="SCREEN" layoutX="80.0" layoutY="534.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="97.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15;" text="Logout" textAlignment="CENTER" textFill="#0d43c9">
+                     <font>
+                        <Font name="Candara" size="16.0" />
+                     </font></Button>
+                  <Button fx:id="btnAccount" layoutX="56.0" layoutY="219.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="146.0" style="-fx-background-color: #e85d04;" text="Accounts" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="dashboardBtn" layoutX="53.0" layoutY="288.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="152.0" style="-fx-background-color: #2ec4b6;" text="Dashboard" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Text fill="WHITE" layoutX="7.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" textAlignment="CENTER" wrappingWidth="219.57599258422852">
+                     <font>
+                        <Font name="Cambria Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="userNameTxt" fill="WHITE" layoutX="6.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="user" textAlignment="CENTER" wrappingWidth="220.75880813598633">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="536.0" prefWidth="532.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="134.0" layoutX="19.0" layoutY="-53.0" stroke="#ffffff00" strokeType="OUTSIDE" width="593.0" />
+            <Text fill="#00000080" layoutX="87.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Name">
+               <font>
+                  <Font name="Cambria" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtAccountName" layoutX="84.0" layoutY="167.0" prefHeight="27.0" prefWidth="253.0" />
+            <Text fill="#00000080" layoutX="87.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type">
+               <font>
+                  <Font name="Cambria" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#00000080" layoutX="84.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Amount">
+               <font>
+                  <Font name="Cambria" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtAmount" layoutX="83.0" layoutY="345.0" prefHeight="27.0" prefWidth="255.0" />
+            <Text fill="#00000080" layoutX="88.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note">
+               <font>
+                  <Font name="Cambria" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtNote" layoutX="84.0" layoutY="436.0" prefHeight="27.0" prefWidth="251.0" />
+            <Button fx:id="btnAdd" layoutX="228.0" layoutY="523.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="107.0" style="-fx-background-color: #4169E1;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font></Button>
+            <Text fx:id="accountNameVal" fill="#d81e5b" layoutX="221.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="252.9831027984619" />
+            <Text fx:id="amountVal" fill="#d81e5b" layoutX="165.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="252.9831027984619" />
+            <Text fx:id="note" fill="#d81e5b" layoutX="141.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="252.9831027984619" />
+            <Button fx:id="btnCancel" layoutX="88.0" layoutY="523.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="105.0" style="-fx-background-color: #4169E1;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="18.0" />
+               </font></Button>
+            <ChoiceBox fx:id="choiceboxType" layoutX="83.0" layoutY="255.0" prefHeight="26.0" prefWidth="254.0" />
+            <Text fx:id="accountTypeVal" fill="#d81e5b" layoutX="141.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*" wrappingWidth="312.78309059143066" />
+            <Text fill="#212738" layoutX="179.0" layoutY="66.0" stroke="#60428600" strokeType="OUTSIDE" strokeWidth="0.0" text="Accounts" textAlignment="CENTER" wrappingWidth="239.3563690185547">
+               <font>
+                  <Font name="Candara" size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
